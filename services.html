@@ -1,0 +1,142 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DocCare</title>
+        <link rel="stylesheet" href="stylesheet/styles.css">
+        <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <section>
+            <div class="logo">
+                <img src="Images/Doccare.jpg" alt="Hospital Logo">
+            </div>
+            <div class="nav-container">
+            <nav>
+                <!--Navigation bar begins-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="payments.html">Payments</a></li>
+                </ul>
+            </nav>
+            <!--!Navigation bar ends-->
+        </div>
+    </div>
+    <main>
+        <!--Services-->
+        <div class="container">
+        <section class="service-section">
+            <h4>Our Services</h4>
+            <div class="services-list">
+                <div class="service-card">
+                    <img src="Images/Emergencypic.avif" alt="Emergency Care">
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency care with state-of-the-art facilities and experienced medical professionals.</p>
+                </div>
+                <div class="service-card">
+                    <img src="Images/Outpatientpic.jpg" alt="Outpatient Services">
+                    <h3>Outpatient Services</h3>
+                    <p>Comprehensive care for patients who do not require overnight hospitalization.</p>
+                </div>
+                <div class="service-card">
+                    <img src="Images/diagnosticpic.webp" alt="Diagnostic Imaging">
+                    <h3>Diagnostic Imaging</h3>
+                    <p>Advanced imaging services including X-ray, MRI, and CT scans for accurate diagnosis.</p>
+                </div>
+                <div class="service-card">
+                    <img src="Images/surgicalpic.jpg" alt="Surgical Unit">
+                    <h3>Surgical Unit</h3>
+                    <p>Modern surgical facilities equipped with the latest technology and skilled surgeons.</p>
+                </div>
+                <div class="service-card">
+                    <img src="Images/laboratory.jpeg" alt="Laboratory Services">
+                    <h3>Laboratory Services</h3>
+                    <p>Comprehensive testing with quick turnaround times for accurate results.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+    <main>
+        <!--Services booking form-->
+        <div class="container">
+        <section class="booking-form">
+            <h2>Book Our Services</h2>
+            <form action="/submit-appointment" method="POST">
+                <div class="form-group">
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="emergency care">Emergency care</option>
+                        <option value="outpatient services">Outpatient Services</option>
+                        <option value="diagnostic imaging">Diagnostic Imaging</option>
+                        <option value="surgical unit">Surgical Unit</option>
+                        <option value="laboratory services">Laboratory Services</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes:</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Book Appointment</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    </main>
+
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p>2024 Our Hopsital. All rights reserved.</p>
+            <p>150/E DocCare, Kandy, Sri Lanka| +94 67 7898 897| doccare@gmail.com</p>
+        </div>
+
+        <div class="footer-content">
+            <ul class="social-media-icons">
+                <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="./Icons/facebook_5968764.png" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="./Icons/instagram_2111463.png" alt="Twitter"></a></li>
+                <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="./Icons/twitter_3670151.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+    
+

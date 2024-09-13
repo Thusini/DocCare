@@ -1,0 +1,159 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DocCare</title>
+        <link rel="stylesheet" href="stylesheet/styles.css">
+        <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <section>
+            <div class="logo">
+                <img src="Images/Doccare.jpg" alt="Hospital Logo">
+            </div>
+            <div class="nav-container">
+            <nav>
+                <!--Navigation bar begins-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="payments.html">Payments</a></li>
+                </ul>
+            </nav>
+            <!--Navigation bar ends-->
+        </div>
+    </div>
+    <main>
+        <!--Information about doctors-->
+        <section class="doctor.intro">
+        <h1>Our Doctors</h1>
+            <h2>We offer specialized Doctors</h2>
+            <p> We offer medical professionals who has completed the necessary education and training to diagnose, treat, and prevent illnesses and injuries in individuals. Doctors provide essential medical care, prescribe medication, perform surgeries, and offer preventative measures to help people maintain their health.</p>
+             </section>
+    </main>
+    <main>
+    <div class="container">
+        <section>
+            <!--Doctors name list-->
+            <h2>Meet Our Doctors</h2>
+            <div class="doctor-list">
+                <div class="doctor-card">
+                    <img src="Images/john.jpg" alt="Dr. John Smith">
+                    <h3>Dr. John Smith</h3>
+                    <p>Cardiologist</p>
+                    <p>Specializes in heart conditions, providing comprehensive care and treatment for cardiovascular diseases.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="Images/emily.avif" alt="Dr. Emily Johnson">
+                    <h3>Dr. Emily Johnson</h3>
+                    <p>Orthopedic Surgeon</p>
+                    <p>Expert in musculoskeletal issues, offering advanced surgical and non-surgical treatments for bone and joint problems.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="Images/michel.webp" alt="Dr. Michel Brown">
+                    <h3>Dr. Michael Brown</h3>
+                    <p>Neurologist</p>
+                    <p>Focused on diagnosing and treating neurological disorders, including strokes, epilepsy, and multiple sclerosis.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="Images/emma.jpg" alt="Dr. Emma Johnson">
+                    <h3>Dr.Emma Johnson</h3>
+                    <p>Family Doctor</p>
+                    <p>Family medicine physicians deal with the day-to-day illnesses.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="Images/dan.jpeg" alt="Dr. Dan Michel">
+                    <h3>Dr.Dan Michel</h3>
+                    <p>Radiologist</p>
+                    <p>A radiologist specializes in diagnosing and treating conditions using medical imaging tests.</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="Images/eli.avif" alt="Dr. Eli Watson">
+                    <h3>Dr.Eli Watson</h3>
+                    <p>Ophthalmology</p>
+                    <p>Ophthalmology is a clinical and surgical specialty within medicine that deals with the diagnosis and treatment of eye disorders.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+    <main>
+        <!--Doctor appointment form-->
+        <div class="container">
+        <section class="booking-form">
+            <h2>Book an Appointment</h2>
+            <form action="/submit-appointment" method="POST">
+                <div class="form-group">
+                    <label for="doctor">Select Doctor:</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="" disabled selected>Select a doctor</option>
+                        <option value="dr-john-smith">Dr. John Smith - Cardiologist</option>
+                        <option value="dr-emily-johnson">Dr. Emily Johnson - Orthopedic Surgeon</option>
+                        <option value="dr-michel-brown">Dr. Michael Brown - Neurologist</option>
+                        <option value="dr-emma johnson">Dr. Emma Johnson - Pediatrician</option>
+                        <option value="dr-dan michel">Dr. Dan Micel - Dermatologist</option>
+                        <option value="dr-eli watson">Dr. Eli Watson- Oncologist</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Your Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes:</label>
+                    <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Book Appointment</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    </main>
+<!--Footer-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>2024 Our Hopsital. All rights reserved.</p>
+                <p>150/E DocCare, Kandy, Sri Lanka| +94 67 7898 897| doccare@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <ul class="social-media-icons">
+                    <li><a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="./Icons/facebook_5968764.png" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><img src="./Icons/instagram_2111463.png" alt="Twitter"></a></li>
+                    <li><a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="./Icons/twitter_3670151.png" alt="Instagram"></a></li>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
+        
+
